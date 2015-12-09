@@ -1,0 +1,14 @@
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\bin\Debug\TxtToBin.exe.config
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\bin\Debug\TxtToBin.exe
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\bin\Debug\TxtToBin.pdb
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.csprojResolveAssemblyReference.cache
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\MainWindow.g.cs
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\App.g.cs
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin_MarkupCompile.cache
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin_MarkupCompile.lref
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\MainWindow.baml
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.g.resources
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.Properties.Resources.resources
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.csproj.GenerateResource.Cache
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.exe
+c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.pdb

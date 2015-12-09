@@ -1,0 +1,9 @@
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\bin\Debug\UnitConverterTests.dll
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\bin\Debug\UnitConverterTests.pdb
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\bin\Debug\TxtToBin.exe
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\bin\Debug\TxtToBin.pdb
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\obj\Debug\UnitConverterTests.csprojResolveAssemblyReference.cache
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\obj\Debug\UnitConverterTests.dll
+C:\Users\Igor\documents\visual studio 2015\Projects\TxtToBin\UnitConverterTests\obj\Debug\UnitConverterTests.pdb
