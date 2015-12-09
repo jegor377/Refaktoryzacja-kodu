@@ -12,3 +12,16 @@ c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\
 c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.csproj.GenerateResource.Cache
 c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.exe
 c:\users\igor\documents\visual studio 2015\Projects\TxtToBin\TxtToBin\obj\Debug\TxtToBin.pdb
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\bin\Debug\TxtToBin.exe.config
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.exe
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.pdb
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\bin\Debug\TxtToBin.exe
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\bin\Debug\TxtToBin.pdb
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\MainWindow.g.cs
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\App.g.cs
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin_MarkupCompile.cache
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin_MarkupCompile.lref
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\MainWindow.baml
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.g.resources
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.Properties.Resources.resources
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.csproj.GenerateResource.Cache
