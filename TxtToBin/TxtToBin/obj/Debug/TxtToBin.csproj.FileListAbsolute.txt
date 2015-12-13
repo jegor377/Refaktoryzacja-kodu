@@ -25,3 +25,4 @@ C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\MainWind
 C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.g.resources
 C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.Properties.Resources.resources
 C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.csproj.GenerateResource.Cache
+C:\Users\Igor\Documents\Refaktoryzacja-kodu\TxtToBin\TxtToBin\obj\Debug\TxtToBin.csprojResolveAssemblyReference.cache
