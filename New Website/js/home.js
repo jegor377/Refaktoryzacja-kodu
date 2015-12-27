@@ -1,5 +1,5 @@
 var slider = new Slider({
-    slidesCount: 3,
+    slidesCount: 2,
     slideDelay: 500
 });
 

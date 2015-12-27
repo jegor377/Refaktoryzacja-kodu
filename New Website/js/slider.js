@@ -24,8 +24,9 @@ function Slider(attributes)
             result += '<li><a id="dot-' + this.removeIDorClass(this.slidesName) + a + 
                 '" onclick="' + this.referenceName + '.setSlide(' + a + ')" class="dot"><i class="fa fa-circle"></i></a></li>';
         }
-        
+
         $(this.sliderDots + " > ul").html(result+'<div class="slider-end"></div>');
+        this.setDotOn(this.acutalSlide);
     }
     
     this.hideEveryOtherSlides = function()
@@ -38,9 +39,25 @@ function Slider(attributes)
     this.setSlide = function(nextSlide)
     {
         if(nextSlide >= 1 && nextSlide <= this.slidesCount) {
+            this.setDotOff(this.acutalSlide);
             $(this.slidesName+this.acutalSlide).hide(this.slideDelay);
             $(this.slidesName+nextSlide).show(this.slideDelay);
             this.acutalSlide = nextSlide;
+            this.setDotOn(this.acutalSlide);
+        }
+    }
+    
+    this.setDotOn = function(dotNumber)
+    {
+        if(dotNumber >= 1 && dotNumber <= this.slidesCount) {
+            $('#dot-' + this.removeIDorClass(this.slidesName) + dotNumber).css('opacity', '0.67')
+        }
+    }
+    
+    this.setDotOff = function(dotNumber)
+    {
+        if(dotNumber >= 1 && dotNumber <= this.slidesCount) {
+            $('#dot-' + this.removeIDorClass(this.slidesName) + dotNumber).css('opacity', '0.4')
         }
     }
     
