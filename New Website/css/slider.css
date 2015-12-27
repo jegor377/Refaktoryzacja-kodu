@@ -12,7 +12,7 @@
 
 .slides
 {
-    max-height: 550px;
+    height: 500px;
 }
 
 .device
@@ -25,8 +25,8 @@
 
 .device > img
 {
-    width: 260px;
-    height: 500px;
+    max-width: 540px;
+    max-height: 540px;
 }
 
 .description

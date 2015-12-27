@@ -6,13 +6,13 @@ function Slider(attributes)
     this.slideDelay = attributes != null ? (attributes.slideDelay != undefined ? attributes.slideDelay : 1000) : 1000;
     this.sliderWindow = attributes != null ? (attributes.sliderWindow != undefined ? attributes.sliderWindow : "#slider-window") : "#slider-window";
     this.sliderDots = attributes != null ? (attributes.sliderDots != undefined ? attributes.sliderDots : "#slider-dots") : "#slider-dots";
+    this.referenceName = attributes != null ? (attributes.referenceName != undefined ? attributes.referenceName : "slider") : "slider";
     
     this.acutalSlide = this.startPoint <= this.slidesCount ? this.startPoint : this.error();
     
     this.startSliding = function()
     {
         this.createDots();
-        this.bindDotsToSlides();
         this.hideEveryOtherSlides();
     }
     
@@ -22,19 +22,10 @@ function Slider(attributes)
         
         for(a=1; a<=this.slidesCount; a++) {
             result += '<li><a id="dot-' + this.removeIDorClass(this.slidesName) + a + 
-                '" class="dot"><i class="fa fa-circle"></i></a></li>';
+                '" onclick="' + this.referenceName + '.setSlide(' + a + ')" class="dot"><i class="fa fa-circle"></i></a></li>';
         }
         
         $(this.sliderDots + " > ul").html(result+'<div class="slider-end"></div>');
-    }
-    
-    this.bindDotsToSlides = function()
-    {
-        for(a=1; a<=this.slidesCount; a++) {
-            $("#dot-"+this.removeIDorClass(this.slidesName)+a).bind('click', function(){
-                alert("test");
-            });
-        }
     }
     
     this.hideEveryOtherSlides = function()
@@ -47,8 +38,8 @@ function Slider(attributes)
     this.setSlide = function(nextSlide)
     {
         if(nextSlide >= 1 && nextSlide <= this.slidesCount) {
-            $(this.slidesName+this.acutalSlide).hide();
-            $(this.slidesName+nextSlide).show();
+            $(this.slidesName+this.acutalSlide).hide(this.slideDelay);
+            $(this.slidesName+nextSlide).show(this.slideDelay);
             this.acutalSlide = nextSlide;
         }
     }
