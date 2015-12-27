@@ -1,0 +1,77 @@
+.navbar
+{
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.navbar-brand
+{
+    color: white !important;
+    opacity: 0.89;
+    transition-duration: 0.7s;
+}
+
+.navbar-brand:hover
+{
+    opacity: 1;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: white;
+    opacity: 0.96;
+}
+
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: white;
+    opacity: 1;
+}
+
+header
+{
+    background-color: #0097a7;
+    color: azure;
+    box-shadow: inset 0 -15px 20px -15px rgba(0,0,0,0.5);
+}
+
+#welcome-box
+{
+    padding-top: 80px;
+    padding-bottom: 130px;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    width: 400px;
+    height: 400px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+}
+
+#welcome-box > img
+{
+    width: 200px;
+    height: 200px;
+}
+
+#welcome-box > hr
+{
+    width: 30%;
+}
+
+#about
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ff7043;
+    color: white;
+}
+
+#about > .container > .row > div > p
+{
+    font-size: 16px;
+}
