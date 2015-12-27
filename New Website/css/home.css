@@ -18,13 +18,12 @@
 
 .navbar-default .navbar-nav > li > a
 {
-    color: white;
+    color: white !important;
     opacity: 0.96;
 }
 
 .navbar-default .navbar-nav > li > a:hover
 {
-    color: white;
     opacity: 1;
 }
 
@@ -52,13 +51,19 @@ header
     text-align: center;
 }
 
-#welcome-box > img
+#big-avatar
 {
     width: 200px;
     height: 200px;
 }
 
-#welcome-box > hr
+#small-avatar
+{
+    width: 150px;
+    height: 150px;
+}
+
+#welcome-box > div > hr
 {
     width: 30%;
 }
@@ -71,7 +76,30 @@ header
     color: white;
 }
 
+.just-center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+.section-header
+{
+    width: 150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
 #about > .container > .row > div > p
 {
     font-size: 16px;
+}
+
+@media (max-width: 768px)
+{
+    #welcome-box
+    {
+        width: 200px;
+        height: 300px;
+    }
 }

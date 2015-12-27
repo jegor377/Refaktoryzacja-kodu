@@ -9,19 +9,23 @@
 
     <title>Igor Santarek</title>
 
+    <link rel="Shortcut icon" href="img/icon.png"/> 
+    
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script src="js/slider.js"></script>
   </head>
 
   <body>
-
-    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -37,9 +41,10 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Protfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -48,10 +53,18 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div id="welcome-box">
-                        <img src="img/avatar.png" alt="avatar" class="img-circle"/>
-                        <hr/>
-                        <h1>Igor Santarek</h1>
-                        <h4>Young programmer</h4>
+                        <div class="visible-lg visible-md visible-sm">
+                            <img id="big-avatar" src="img/avatar.png" alt="avatar" class="img-circle"/>
+                            <hr/>
+                            <h1>Igor Santarek</h1>
+                            <h4>Young programmer</h4>
+                        </div>
+                        <div class="visible-xs">
+                            <img id="small-avatar" src="img/avatar.png" alt="avatar" class="img-circle"/>
+                            <hr/>
+                            <h3>Igor Santarek</h3>
+                            <h6>Young programmer</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,34 +73,92 @@
     
     <section id="about">
         <div class="container">
+            <!--<div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-header">
+                        <h3>About</h3>
+                        <hr/>
+                    </div>
+                </div>
+            </div>-->
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-9">
-                    <h3>About</h3>
-                    <hr/>
+                <div class="col-lg-12 col-md-12 col-sm-12 not-visible-xs">
+                    <div class="slider">
+                        <div id="slider-window" class="slides">
+                            <div id="slide1" class="slide">
+                                <div class="device">
+                                    <img src="img/ns_converter.png"/>
+                                </div>
+                                <div class="description">
+                                    <div class="slider-title">
+                                        <h1>Aplikacje na smartfony</h1>
+                                    </div>
+                                    <div class="slider-content">
+                                        <ul>
+                                            <li>Szybki proces tworzenia aplikacji</li>
+                                            <li>Aplikacje wieloplatformowe</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="slider-end"></div>
+                            </div>
+                            <div id="slide2" class="slide">
+                                <div class="device">
+                                    <img src="img/ns_converter2.png"/>
+                                </div>
+                                <div class="description">
+                                    <div class="slider-title">
+                                        <h1>title</h1>
+                                    </div>
+                                    <div class="slider-content">
+                                        <ul>
+                                            <li>Szybki proces tworzenia aplikacji</li>
+                                            <li>Aplikacje wieloplatformowe</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="slider-end"></div>
+                            </div>
+                            <div id="slide3" class="slide">
+                                <div class="device">
+                                    <img src="img/ns_converter3.png"/>
+                                </div>
+                                <div class="description">
+                                    <div class="slider-title">
+                                        <h1>title</h1>
+                                    </div>
+                                    <div class="slider-content">
+                                        <ul>
+                                            <li>Szybki proces tworzenia aplikacji</li>
+                                            <li>Aplikacje wieloplatformowe</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="slider-end"></div>
+                            </div>
+                        </div>
+                        <div id="slider-dots" class="dots">
+                            <ul></ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <p class="text-justify">
-                        Mam na imię Igor. Mam 14 lat i piszę gry, programy komputerowe oraz tworzę strony internetowe. 
-                        Programuję od 5 lat. Najpierw zaczynałem z Batch'em, dziś już uczę sie Assemblera. 
-                        Z każdym kolejnym tygodniem zdobywam coraz większe doświadczenie. Przez dotychczasową naukę nauczyłem się wielu jezyków, ale najbardziej przypadł mi do gustu C++. 
-                        Potrafię w nim zrobic praktycznie prawie wszystko. Swoją pracę wykonuje z sercem i dużym zaangażowaniem. Tworzę strony oparte o najnowsze standardy. 
-                        Narazie robiłem tylko drobne zlecenia, lecz jeżeli potrzebujesz strony internetowej to śmiało, napisz do mnie!
+                    Mam na imię Igor. Mam 14 lat i piszę gry, programy komputerowe oraz tworzę strony internetowe. 
+                    Programuję od 5 lat. Najpierw zaczynałem z Batch'em, dziś już uczę sie Assemblera. 
+                    Z każdym kolejnym tygodniem zdobywam coraz większe doświadczenie. Przez dotychczasową naukę nauczyłem się wielu jezyków, ale najbardziej przypadł mi do gustu C++. 
+                    Potrafię w nim zrobic praktycznie prawie wszystko. Swoją pracę wykonuje z sercem i dużym zaangażowaniem. Tworzę strony oparte o najnowsze standardy. 
+                    Narazie robiłem tylko drobne zlecenia, lecz jeżeli potrzebujesz strony internetowej to śmiało, napisz do mnie!
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

@@ -1,0 +1,95 @@
+.slider
+{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    
+    width: 90%;
+    height: 550px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides
+{
+    max-height: 550px;
+}
+
+.device
+{
+    float: left;
+    max-height: 550px;
+    
+    padding-left: 50px;
+}
+
+.device > img
+{
+    width: 260px;
+    height: 500px;
+}
+
+.description
+{
+    float: right;
+    
+    max-height: 550px;
+    padding-right: 20px;
+    
+    text-align: right;
+}
+
+.slider-content
+{
+    opacity: 0.84;
+}
+
+.slider-content > ul
+{
+    list-style-type: none;
+    font-size: 17px;
+}
+
+.slider-end
+{
+    clear: both;
+}
+
+.dots
+{
+    text-align: center;
+    margin-top: 15px;
+    max-width: 660px; /* for  below IE7 use `width: 660px;` */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dots > ul
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.dots > ul > li
+{
+    padding: 5px;
+    float: left;
+}
+
+.dots > ul > li > a
+{
+    color: white !important;
+    opacity: 0.4;
+    transition-duration: 0.6s;
+}
+
+.dots > ul > li > a:hover
+{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.not-visible
+{
+    display: none;
+}
