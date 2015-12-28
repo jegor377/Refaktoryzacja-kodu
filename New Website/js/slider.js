@@ -7,6 +7,7 @@ function Slider(attributes)
     this.sliderWindow = attributes != null ? (attributes.sliderWindow != undefined ? attributes.sliderWindow : "#slider-window") : "#slider-window";
     this.sliderDots = attributes != null ? (attributes.sliderDots != undefined ? attributes.sliderDots : "#slider-dots") : "#slider-dots";
     this.referenceName = attributes != null ? (attributes.referenceName != undefined ? attributes.referenceName : "slider") : "slider";
+    this.slideTime = attributes != null ? (attributes.slideTime != undefined ? attributes.slideTime : 1000) : 1000;
     
     this.acutalSlide = this.startPoint <= this.slidesCount ? this.startPoint : this.error();
     
@@ -14,6 +15,7 @@ function Slider(attributes)
     {
         this.createDots();
         this.hideEveryOtherSlides();
+        setInterval(this.startSlidingSlider, this.slideTime, this);
     }
     
     this.createDots = function()
@@ -59,6 +61,11 @@ function Slider(attributes)
         if(dotNumber >= 1 && dotNumber <= this.slidesCount) {
             $('#dot-' + this.removeIDorClass(this.slidesName) + dotNumber).css('opacity', '0.4')
         }
+    }
+    
+    this.startSlidingSlider = function(object)
+    {
+        object.setSlide(object.acutalSlide+1 <= object.slidesCount ? object.acutalSlide+1 : 1);
     }
     
     this.error = function()

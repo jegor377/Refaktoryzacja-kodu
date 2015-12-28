@@ -15,6 +15,11 @@
     height: 500px;
 }
 
+.slide
+{
+    max-height: 550px;
+}
+
 .device
 {
     float: left;
@@ -33,6 +38,7 @@
 {
     float: right;
     
+    max-width: 40%;
     max-height: 550px;
     padding-right: 20px;
     
@@ -42,12 +48,13 @@
 .slider-content
 {
     opacity: 0.84;
+    font-size: 17px;
+    max-width: 
 }
 
 .slider-content > ul
 {
     list-style-type: none;
-    font-size: 17px;
 }
 
 .slider-end
@@ -108,6 +115,7 @@
     .slider-content
     {
         text-align: center;
+        font-size: 15px;
     }
     
     .slider

@@ -1,3 +1,9 @@
+var slider = new Slider({
+    slidesCount: 2,
+    slideDelay: 500,
+    slideTime: 6000
+});
+
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -14,37 +20,40 @@ $(function() {
 });
 
 $(function() {
-    setAboutValues();
-    setFooterValue();
+    setCodedValues([
+        {
+            where: '#about-content > p', 
+            what: 'age', 
+            toWhat: new Date().getFullYear() - 2001
+        },
+        {
+            where: '#about-content > p', 
+            what: 'p_start', 
+            toWhat: new Date().getFullYear() - 2010
+        },
+        {
+            where: ['footer > h4', 
+                    'footer > h5'], 
+            what: 'date', 
+            toWhat: new Date().getFullYear() == 2015 ? 2015 : "2015 - " + new Date().getFullYear()
+        }
+    ]);
+    
     attachScrollingEvent();
+    
+    slider.startSliding();
 });
-
-function setAboutValues()
-{
-    var about = $('#about-content > p').html();
-    about = about.replace("{{age}}", new Date().getFullYear() - 2001);
-    about = about.replace("{{p_start}}", new Date().getFullYear() - 2010);
-    $('#about-content > p').html(about);
-}
-
-function setFooterValue()
-{
-    var footer = $('footer > h5').html();
-    footer = footer.replace("{{date}}", new Date().getFullYear() == 2015 ? 2015 : "2015 - " + new Date().getFullYear());
-    $('footer > h5').html(footer);
-}
 
 function attachScrollingEvent()
 {
     $(window).bind('scroll', function(){
-        if($(window).scrollTop() > 25 && $('nav').hasClass('remove-color')) $('nav').removeClass('remove-color');
-        else if($(window).scrollTop() <= 25) $('nav').addClass('remove-color');
+        if($(window).scrollTop() > 25 && $('nav').hasClass('remove-color'))
+        {
+            $('nav').removeClass('remove-color');
+        }
+        else if($(window).scrollTop() <= 25)
+        {
+            $('nav').addClass('remove-color');
+        }
     });
 }
-
-var slider = new Slider({
-    slidesCount: 2,
-    slideDelay: 500
-});
-
-slider.startSliding();

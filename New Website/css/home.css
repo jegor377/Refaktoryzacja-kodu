@@ -1,3 +1,8 @@
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
 .navbar
 {
     transition-duration: 0.45s;
@@ -15,6 +20,12 @@
     height: 80px;
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+.icon-bar
+{
+    color: white;
+    background-color: white;
 }
 
 .navbar-brand
@@ -42,7 +53,13 @@
 
 header
 {
-    background-color: #0097a7;
+    /*background-color: #0097a7;*/
+    background: url(../img/header2.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
     color: azure;
 }
 
@@ -61,6 +78,7 @@ header
     margin-right: auto;
     
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 #big-avatar
@@ -92,11 +110,11 @@ header
 
 #about
 {
-    color: white;
+    color: azure;
     padding-top: 60px;
     padding-bottom: 30px;
     
-    background-color: #1565c0;
+    background-color: #0097a7;
 }
 
 #about-content > h3
@@ -104,6 +122,7 @@ header
     width: 20%;
     height: 40px;
     border-bottom: 1.5px solid white;
+    color:white;
 }
 
 #about-content > p
@@ -118,15 +137,16 @@ footer
     padding-bottom: 25px;
     color: #fff;
     
-    background-color: #0097a7;
+    background-color: #00838f;
     
     text-align: center;
 }
-
+/*
 footer > h5
 {
     font-size: 17px;
 }
+*/
 
 @media (max-width: 768px)
 {
@@ -134,5 +154,15 @@ footer > h5
     {
         width: 200px;
         height: 300px;
+    }
+    
+    .navbar-default .navbar-nav > li > a
+    {
+        background-color: #009688 !important;
+    }
+    
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    {
+        background-color: #009688 !important;
     }
 }
