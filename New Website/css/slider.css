@@ -45,6 +45,11 @@
     text-align: right;
 }
 
+.slider-title
+{
+    font-family: 'Oswald', sans-serif;
+}
+
 .slider-content
 {
     opacity: 0.84;
