@@ -16,6 +16,7 @@ $(function() {
 $(function() {
     setAboutValues();
     setFooterValue();
+    attachScrollingEvent();
 });
 
 function setAboutValues()
@@ -31,6 +32,14 @@ function setFooterValue()
     var footer = $('footer > h5').html();
     footer = footer.replace("{{date}}", new Date().getFullYear() == 2015 ? 2015 : "2015 - " + new Date().getFullYear());
     $('footer > h5').html(footer);
+}
+
+function attachScrollingEvent()
+{
+    $(window).bind('scroll', function(){
+        if($(window).scrollTop() > 25 && $('nav').hasClass('remove-color')) $('nav').removeClass('remove-color');
+        else if($(window).scrollTop() <= 25) $('nav').addClass('remove-color');
+    });
 }
 
 var slider = new Slider({
