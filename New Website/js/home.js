@@ -5,21 +5,6 @@ var slider = new Slider({
 });
 
 $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 500);
-                return false;
-            }
-        }
-    });
-});
-
-$(function() {
     setCodedValues([
         {
             where: '#about-content > p', 
@@ -39,21 +24,8 @@ $(function() {
         }
     ]);
     
-    attachScrollingEvent();
+    setScrollerDelay(500);
+    attachScrollingEvent('nav', 'remove-color', 25);
     
     slider.startSliding();
 });
-
-function attachScrollingEvent()
-{
-    $(window).bind('scroll', function(){
-        if($(window).scrollTop() > 25 && $('nav').hasClass('remove-color'))
-        {
-            $('nav').removeClass('remove-color');
-        }
-        else if($(window).scrollTop() <= 25)
-        {
-            $('nav').addClass('remove-color');
-        }
-    });
-}
