@@ -131,7 +131,7 @@
         <div class="container">
             <div class="row">
                 <div id="about-content" class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
-                    <h3 class="section-title">About</h3>
+                    <h3 class="section-title">Who am I?</h3>
                     <p class="text-justify">
                         My name is Igor. 
                         I'm {{age}} years old and I write computer programs, create phone apps and websites. 
@@ -156,7 +156,7 @@
                     <div class="row">
                         <h3 class="section-title">Portfolio</h3>
                     </div>
-                    <div class="row">
+                    <div id="portfolio-options" class="row">
                         <div class="col-lg-9 col-md-10 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-1">
                             <div class="portfolio-elements">
                                 <ul>
@@ -220,7 +220,21 @@
     <section id="contact">
         <div class="container">
             <div class="row">
-                TEST
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <h3 class="section-title">Be in touch!</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <form action="send.php" method="post">
+                                <input type="email" class="form-control col-md-6 my-input" name="email" placeholder="Your email">
+                                <textarea class="form-control my-input" rows="7" name="message" placeholder="Message"></textarea>
+                                <br/>
+                                <button type="submit" name="submit" class="btn my-btn btn-md">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

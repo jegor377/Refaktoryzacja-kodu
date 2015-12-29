@@ -6,8 +6,6 @@ body
 .navbar
 {
     transition-duration: 0.45s;
-    //background-color: #009688;
-    //border-bottom-color: #00897b;
     background-color: #0097a7;
     border-bottom-color: #00838f;
     padding-top: 0px;
@@ -232,6 +230,26 @@ header
     margin-top: 50px;
 }
 
+#contact
+{
+    background-color: #0097a7;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.my-input
+{
+    border-radius: 0;
+    opacity: 0.97;
+    
+}
+
+.my-input:hover
+{
+    opacity: 1;
+    resize: none;
+}
+
 footer
 {
     color: #fff;
@@ -262,11 +280,6 @@ footer
     color: white !important;
 }
 
-.btn:hover
-{
-    //background-color: #43a047;
-}
-
 .my-btn:hover
 {
     background-color: #ff5722;
@@ -288,11 +301,11 @@ footer
     
     .navbar-default .navbar-nav > li > a
     {
-        background-color: #009688 !important;
+        background-color: #0097a7 !important;
     }
     
     .navbar-default .navbar-collapse, .navbar-default .navbar-form
     {
-        background-color: #009688 !important;
+        background-color: #0097a7 !important;
     }
 }
