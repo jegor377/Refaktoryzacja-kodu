@@ -42,31 +42,31 @@ if(isOk('id')) {
     <script src="js/scrollerDelay.js"></script>
 	<?php
 		require_once "config.php";
-		if (!$link = mysql_connect($host, $user, $password))
+		/*if (!$link = mysqli_connect($host, $user, $password))
 		{
 			echo 'Failed to connect with database.';
 			exit;
 		}
 		else
 		{
-			mysql_query("SET CHARSET utf8");
-			mysql_query("SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
-			if(!mysql_select_db($database, $link))
+			mysqli_query("SET CHARSET utf8");
+			mysqli_query("SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
+			if(!mysqli_select_db($link, $database))
 			{
-				echo "Failed to connect with database.<br/>".mysql_error();
+				echo "Failed to connect with database.<br/>".mysqli_error();
 				exit;
 			}
 			else
 			{
-				$result = mysql_query("SELECT * FROM projects WHERE id = ".(int)$_GET['id'], $link);
+				$result = mysqli_query("SELECT * FROM projects WHERE id = ".(int)$_GET['id'], $link);
 				if(!$result)
 				{
-					echo "Failed to execute database question. (Or project just not exist...)\n".mysql_error();
+					echo "Failed to execute database question. (Or project just not exist...)\n".mysqli_error();
 					exit;
 				}
 				else
 				{
-					while($row = mysql_fetch_assoc($result))
+					while($row = mysqli_fetch_assoc($result))
 					{
 						$img = $row['images'];
 						$name = $row['name'];
@@ -75,7 +75,27 @@ if(isOk('id')) {
 					}
 				}
 			}
+		}*/
+		$conn = new mysqli($host, $user, $password, $database);
+		if(mysqli_connect_errno())
+		{
+			printf("Failed to connect with database.", mysqli_connect_error());
+			exit();
 		}
+		
+		if($result = mysqli_query($conn, "SELECT * FROM projects WHERE id = ".(int)$_GET['id']));
+		{
+			while($row = mysqli_fetch_assoc($result))
+			{
+				$img = $row['images'];
+				$name = $row['name'];
+				$description = $row['description'];
+				$link = $row['link'];
+			}
+			$result->close();
+		}
+		
+		$conn->close();
 	?>
   </head>
 
